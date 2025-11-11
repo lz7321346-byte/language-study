@@ -1,0 +1,82 @@
+🚀 单词学习应用 - 启动指南
+===============================
+
+重要：如果其他脚本显示乱码，请按照这个指南手动操作！
+
+📋 步骤1：检查环境
+==================
+需要安装：
+- Python 3.9+ (https://www.python.org/downloads/)
+- Node.js 16+ (https://nodejs.org/)
+
+验证安装：
+1. 按 Win+R，输入 cmd，回车
+2. 输入 python --version 应该显示版本号
+3. 输入 node --version 应该显示版本号
+
+📋 步骤2：安装前端依赖
+======================
+1. 打开命令提示符
+2. 输入：cd vocabulary_story_app\frontend
+3. 输入：npm install
+4. 等待安装完成（需要几分钟）
+
+📋 步骤3：启动服务
+==================
+
+方法A：分别启动（推荐）
+----------------------
+1. 打开第一个命令提示符：
+   cd vocabulary_story_app\backend
+   python app.py
+
+2. 打开第二个命令提示符：
+   cd vocabulary_story_app\frontend
+   npm start
+
+3. 等待前端编译完成，访问：http://localhost:3001
+
+方法B：使用现有脚本
+--------------------
+如果脚本不显示乱码，尝试：
+- quick_check.bat (检查状态)
+- setup_frontend.bat (安装依赖)
+- simple_start.bat (启动服务)
+
+🔍 故障排除
+============
+
+问题：npm install 失败
+解决：
+cd vocabulary_story_app\frontend
+npm config set registry https://registry.npmmirror.com
+npm install
+
+问题：端口被占用
+解决：
+1. 按 Win+R，输入 cmd
+2. 输入：netstat -ano | findstr :3001
+3. 找到PID，输入：taskkill /PID <PID> /F
+
+问题：启动慢
+解决：等待1-2分钟，首次启动需要编译
+
+问题：仍然无法访问
+解决：
+1. 尝试 http://127.0.0.1:3001
+2. 更换端口：在frontend\package.json中将3001改为3002
+
+✅ 成功标志
+===========
+- 后端控制台显示：Running on http://127.0.0.1:5000/
+- 前端控制台显示：Compiled successfully
+- 浏览器能打开 http://localhost:3001
+
+📞 需要帮助？
+============
+如果仍有问题，请：
+1. 运行 python check_status.py （如果Python可用）
+2. 截图控制台错误信息
+3. 告诉我具体遇到了什么问题
+
+🎉 祝你学习愉快！

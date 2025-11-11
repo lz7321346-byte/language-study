@@ -1,0 +1,62 @@
+单词学习应用 - 手动启动指南
+==============================
+
+如果脚本无法运行，请按照以下步骤手动启动：
+
+1. 安装前端依赖
+================
+打开命令提示符（Win+R 输入 cmd），运行：
+
+cd vocabulary_story_app\frontend
+npm install
+
+等待安装完成（需要几分钟）。
+
+2. 启动后端服务
+===============
+打开第一个命令提示符，运行：
+
+cd vocabulary_story_app\backend
+python app.py
+
+如果看到 "Running on http://127.0.0.1:5000/" 表示成功。
+
+3. 启动前端服务
+===============
+打开第二个命令提示符，运行：
+
+cd vocabulary_story_app\frontend
+npm start
+
+等待编译完成，然后会自动打开浏览器。
+如果没有自动打开，访问：http://localhost:3001
+
+常见问题解决：
+==============
+
+问题：npm install 失败
+解决：检查网络连接，尝试使用国内镜像：
+      npm config set registry https://registry.npmmirror.com
+
+问题：端口被占用
+解决：检查端口占用：
+      netstat -ano | findstr :3001
+      netstat -ano | findstr :5000
+
+      杀死进程：
+      taskkill /PID <进程ID> /F
+
+问题：前端启动慢
+解决：等待1-2分钟，首次启动需要编译。
+
+问题：仍然无法访问
+解决：尝试更换端口，在frontend\package.json中修改：
+      "start": "set PORT=3002 && react-scripts start"
+      然后访问 http://localhost:3002
+
+成功标志：
+=========
+- 后端：控制台显示 "Running on http://127.0.0.1:5000/"
+- 前端：控制台显示 "Compiled successfully" 且浏览器能打开页面
+
+如果仍有问题，请截图控制台错误信息。
