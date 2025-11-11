@@ -14,8 +14,9 @@
 vocabulary_story_app/
 ├── backend/          # Python后端服务
 │   ├── app.py       # Flask主应用
-│   ├── story_generator.py  # MetaGPT故事生成器
+│   ├── story_generator.py  # 规则引擎故事生成器（离线可用）
 │   ├── vocabulary_manager.py  # 单词管理器
+│   ├── user_data.py  # 偏好与学习统计存储
 │   └── requirements.txt
 ├── frontend/         # React前端应用
 │   ├── src/
@@ -25,7 +26,7 @@ vocabulary_story_app/
 │   └── package.json
 ├── config/           # 配置文件
 │   ├── metagpt_config.yaml
-│   └── app_config.json
+│   └── story_templates.json
 └── data/            # 数据文件
     ├── vocabulary.json
     └── user_data.json
@@ -42,6 +43,14 @@ vocabulary_story_app/
 - 📊 **学习统计**：跟踪学习进度和效果分析
 - ⚙️ **个性化设置**：自定义学习偏好和故事类型
 - 🔊 **语音功能**：单词发音和故事朗读
+
+## 🧠 后端能力亮点（全新升级）
+
+- 🔁 **离线故事生成引擎**：内置基于提示词模板的规则引擎，即使没有MetaGPT或外部LLM也能生成语境故事。
+- 📚 **可配置词库系统**：`data/vocabulary.json` 支持多语言、多难度标签，后端会根据日期稳定推送每日单词。
+- 🧑‍💻 **偏好与进度存储**：`user_data.py` 使用线程安全的JSON存储，支持更新偏好与学习统计。
+- 🌍 **多语言模板**：`config/story_templates.json` 让你能快速新增不同语言的故事开头/结尾模板。
+- 🧪 **RESTful API**：统一返回 `{success, data}` 结构，方便前端与测试脚本快速集成。
 
 ## 🚀 快速开始
 

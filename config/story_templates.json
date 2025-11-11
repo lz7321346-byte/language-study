@@ -1,0 +1,20 @@
+{
+  "en": {
+    "intros": [
+      "On a {setting} morning, {protagonist} set a reminder to practise new vocabulary.",
+      "Whenever {protagonist} feels curious, a {setting} adventure begins."
+    ],
+    "outros": [
+      "Feeling confident, {protagonist} whispered the new phrases one more time.",
+      "As the sun set, {protagonist} promised to keep exploring language every day."
+    ]
+  },
+  "bn": {
+    "intros": [
+      "একটি {setting} সকালে {protagonist} নতুন শব্দ অনুশীলনের সিদ্ধান্ত নিল।"
+    ],
+    "outros": [
+      "শব্দগুলো মনে রেখে {protagonist} দিনের শেষে মৃদু হাসল।"
+    ]
+  }
+}

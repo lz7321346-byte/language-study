@@ -1,0 +1,15 @@
+{
+  "preferences": {
+    "story_type": "daily",
+    "daily_words": 5,
+    "user_level": "intermediate",
+    "language": "en",
+    "story_length": "medium"
+  },
+  "stats": {
+    "total_stories": 2,
+    "total_words_learned": 15,
+    "streak_days": 3,
+    "last_activity_date": "2024-01-01"
+  }
+}

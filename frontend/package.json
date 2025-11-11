@@ -1,0 +1,8 @@
+{
+  "name": "language-study-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "echo 'Frontend placeholder: please integrate a React app.' && exit 0"
+  }
+}

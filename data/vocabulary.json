@@ -1,0 +1,83 @@
+[
+  {
+    "word": "serendipity",
+    "meaning": "the occurrence of pleasant events by chance",
+    "language": "en",
+    "part_of_speech": "noun",
+    "example": "Finding the cozy cafe was pure serendipity on their rainy walk.",
+    "level": "advanced",
+    "tags": ["emotion", "daily"]
+  },
+  {
+    "word": "gratitude",
+    "meaning": "a feeling of thankfulness",
+    "language": "en",
+    "part_of_speech": "noun",
+    "example": "She wrote a note of gratitude to her mentor.",
+    "level": "beginner",
+    "tags": ["emotion", "mindset"]
+  },
+  {
+    "word": "navigate",
+    "meaning": "to find a way through a place",
+    "language": "en",
+    "part_of_speech": "verb",
+    "example": "The guide helped the tourists navigate the winding streets.",
+    "level": "intermediate",
+    "tags": ["travel", "daily"]
+  },
+  {
+    "word": "zenith",
+    "meaning": "the highest point of success or power",
+    "language": "en",
+    "part_of_speech": "noun",
+    "example": "At the zenith of the show, the crowd was on its feet.",
+    "level": "advanced",
+    "tags": ["astronomy", "metaphor"]
+  },
+  {
+    "word": "luminous",
+    "meaning": "shining or full of light",
+    "language": "en",
+    "part_of_speech": "adjective",
+    "example": "The luminous moon lit up the quiet park.",
+    "level": "intermediate",
+    "tags": ["nature", "visual"]
+  },
+  {
+    "word": "hola",
+    "meaning": "hello",
+    "language": "es",
+    "part_of_speech": "interjection",
+    "example": "Cuando llegó, dijo 'hola' con una gran sonrisa.",
+    "level": "beginner",
+    "tags": ["greeting"]
+  },
+  {
+    "word": "aventura",
+    "meaning": "adventure",
+    "language": "es",
+    "part_of_speech": "noun",
+    "example": "La aventura comenzó en una pequeña ciudad costera.",
+    "level": "intermediate",
+    "tags": ["travel"]
+  },
+  {
+    "word": "学习",
+    "meaning": "to study or learn",
+    "language": "zh",
+    "part_of_speech": "动词",
+    "example": "他们每天晚上一起学习中文。",
+    "level": "beginner",
+    "tags": ["education"]
+  },
+  {
+    "word": "灵感",
+    "meaning": "inspiration",
+    "language": "zh",
+    "part_of_speech": "名词",
+    "example": "这段音乐给了她新的灵感。",
+    "level": "intermediate",
+    "tags": ["creativity"]
+  }
+]
